@@ -1,28 +1,34 @@
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+// import React from 'react';
+import logo from '../assets/images/IYV.png'
 
 function TopBar(){
-    return(
+    return (
         <>
-        <nav>
-            <div class="logo">
-                <image class="logoImg"
-                src="../../assets/" alt="logo">
+        <nav className='navBar'>
+            <div className='containerLogo'>
+                <img src={logo} alt="logo" />
             </div>
-            <div>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+            <div className='listado'>
+                <ul className="listNavBar">
+                    <li>
+                        <a href="/">Pesronas</a>
+                    </li>
+                    <li>
+                        <a href="/">Paisajes</a>
+                    </li>
+                    <li>
+                        <a href="/">Abstractos</a>
+                    </li>
                 </ul>
             </div>
-            <div class="buttons">
-                <buttosn>algo</buttosn>
-                <buttosn>algo</buttosn>
+            <div>
+                <button>Contacto</button>
+                <button></button>
             </div>
         </nav>
         </>
     )
+    
 };
 
 export default TopBar;
